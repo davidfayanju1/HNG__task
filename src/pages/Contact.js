@@ -13,17 +13,17 @@ const Contact = () => {
             <div className='form-flex'>
                 <div className="form-group">
                     <label htmlFor="first-name">First Name</label>
-                    <input type="text" placeholder='Enter your first name'/>
+                    <input id='first_name' type="text" placeholder='Enter your first name'/>
                 </div>
                 <div className="form-group">
                     <label htmlFor="last-name">Last Name</label>
-                    <input type="text" placeholder='Enter your last name'/>
+                    <input id='last_name' type="text" placeholder='Enter your last name'/>
                 </div>
             </div>
 
             <div className="form-group">
-                <label htmlFor="first-name">Email</label>
-                <input type="email" placeholder='yourname@email.com'/>
+                <label htmlFor="email">Email</label>
+                <input id='email' type="email" placeholder='yourname@email.com'/>
             </div>
 
             <div className="form-group" id='messageText'>
@@ -32,12 +32,12 @@ const Contact = () => {
             </div>
 
             <div className="form-check">
-                <input type="checkbox" name="" id="" />
+                <input type="checkbox"/>
                 <small>You agree to providing your data (name) who may contact you.</small>
             </div>
 
             <div className="form-group">
-                <input type="submit" value="Send message" />
+                <button type='submit'id='btn_submit'>Send message</button>
             </div>
         </form>
     </div>
